@@ -1,0 +1,44 @@
+-tipoUsuario
+idTipoUsuario (PK)
+tipoUsuario
+
+-usuario
+idUsuario (PK)
+idTipoUsuario (FK)
+nome
+email
+senha
+
+-medico
+idMedico (PK)
+idUsuario (FK)
+idEspecialidade (FK)
+idClinica (FK)
+crm
+
+-pacientes
+idPaciente (PK)
+idUsuario (FK)
+dataNascimento
+telefone
+RG
+CPF
+endereco
+
+-especialidades
+idEspecialidade (PK)
+especialidade
+
+-clinicas
+idClinica (PK)
+nomeClinica
+CNPJ
+razaoSocial
+endereco
+
+-consultas
+idConsulta (PK)
+idPaciente (FK)
+idMedico (FK)
+dataConsulta
+situacao
