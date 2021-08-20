@@ -1,22 +1,22 @@
--tipoUsuario
+-tipoUsuario ok
 idTipoUsuario (PK)
 tipoUsuario
 
--usuario
+-usuario ok
 idUsuario (PK)
 idTipoUsuario (FK)
 nome
 email
 senha
 
--medico
+-medico ok
 idMedico (PK)
 idUsuario (FK)
 idEspecialidade (FK)
 idClinica (FK)
 crm
 
--pacientes
+-pacientes ok
 idPaciente (PK)
 idUsuario (FK)
 dataNascimento
@@ -25,18 +25,18 @@ RG
 CPF
 endereco
 
--especialidades
+-especialidades ok
 idEspecialidade (PK)
 especialidade
 
--clinicas
+-clinicas ok
 idClinica (PK)
 nomeClinica
 CNPJ
 razaoSocial
 endereco
 
--consultas
+-consultas ok
 idConsulta (PK)
 idPaciente (FK)
 idMedico (FK)
