@@ -30,3 +30,8 @@ VALUES (7, 10, '20/01/2020 15:00', 'Realizada'), (2, 9, '06/01/2020 10:00', 'Can
 (7, 10, '08/03/2020 15:00', 'Agendada'), (4, 8 '09/03/2020 11:00', 'Agendada');
 GO
 
+INSERT INTO MEDICO(idUsuario, idEspecialidade, idClinica, crm)
+VALUES (8, 2, 1, '54356-SP'), (9, 17, 1, '53452-SP'), (10, 16, 1, '65463-SP');
+GO
+
+--Insert de Pacientes feito por Importação
