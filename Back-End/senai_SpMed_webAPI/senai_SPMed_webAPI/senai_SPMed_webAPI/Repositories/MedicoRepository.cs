@@ -12,7 +12,19 @@ namespace senai_SPMed_webAPI.Repositories
         SpMedContext ctx = new SpMedContext();
         public void Atualizar(int idMedico, Medico medicoAtualizado)
         {
-            throw new NotImplementedException();
+            Medico medicoBuscado = ctx.Medicos.Find(idMedico);
+
+            if (medicoAtualizado.IdUsuario != 0 && medicoAtualizado.IdEspecialidade != 0 && medicoAtualizado.IdClinica != 0 && medicoAtualizado.Crm != null)
+            {
+                medicoAtualizado.IdUsuario = medicoBuscado.IdUsuario;
+                medicoAtualizado.IdEspecialidade = medicoBuscado.IdEspecialidade;
+                medicoAtualizado.IdClinica = medicoBuscado.IdClinica;
+                medicoAtualizado.Crm = medicoBuscado.Crm;
+
+                ctx.Medicos.Update(medicoBuscado);
+
+                ctx.SaveChanges();
+            }
         }
 
         public Medico BuscarPorId(int idMedico)
