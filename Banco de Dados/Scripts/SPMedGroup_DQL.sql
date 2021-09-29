@@ -1,4 +1,4 @@
-USE SMEDGROUP;
+USE SPMEDGROUP;
 GO
 
 
@@ -18,6 +18,9 @@ SELECT * FROM PACIENTES;
 GO
 
 SELECT * FROM CONSULTAS;
+GO
+
+SELECT * FROM MEDICO;
 GO
 
 SELECT Paciente.nomePaciente AS [Nome do Paciente], Medico.nomeMedico AS [Nome do Médico], Situacao.descricao AS [Situação], dataConsulta AS [Data da Consulta], Consulta.descricao AS [Descrição da Consulta]

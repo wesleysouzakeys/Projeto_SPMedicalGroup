@@ -17,5 +17,7 @@ namespace senai_SPMed_webAPI.Interfaces
         void Atualizar(int idUsuario, Usuario usuarioAtualizado);
 
         void Deletar(int idUsuario);
+
+        Usuario Login(string email, string senha);
     }
 }

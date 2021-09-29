@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using senai_SPMed_webAPI.Domains;
 using senai_SPMed_webAPI.Interfaces;
 using senai_SPMed_webAPI.Repositories;
@@ -29,6 +30,7 @@ namespace senai_SPMed_webAPI.Controllers
             return Ok(_usuarioRepository.BuscarPorId(idUsuario));
         }
 
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Cadastrar(Usuario novoUsuario)
         {

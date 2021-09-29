@@ -1,4 +1,5 @@
-﻿using senai_SPMed_webAPI.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using senai_SPMed_webAPI.Contexts;
 using senai_SPMed_webAPI.Domains;
 using senai_SPMed_webAPI.Interfaces;
 using System;
@@ -54,5 +55,6 @@ namespace senai_SPMed_webAPI.Repositories
         {
             return ctx.Consultas.ToList();
         }
+
     }
 }
