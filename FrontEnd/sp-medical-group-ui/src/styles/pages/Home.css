@@ -1,0 +1,53 @@
+/* Global ========= */
+:root {
+  --primary-color: #215a58;
+  --secondary-color: #007fa3;
+  --third-color: #e8efef;
+  --title: #3f3d56;
+  --text: #3e4954;
+  --option: #878787;
+  --background: #f3f5f5;
+  --table-row-background: #fafbfb;
+  --white-background: #ffffff;
+  --input-border: #dfe1e5;
+  --delete-red: #ea4747;
+}
+
+/* Patient Home ========= */
+.home__container {
+  width: 100%;
+  height: 750px;
+  background-image: url(../../img/nurse-background.svg);
+  background-repeat: no-repeat;
+  background-color: var(--background);
+  background-position: bottom right;
+  object-fit: contain;
+  overflow: auto;
+}
+
+.home__container.doctor {
+  background-image: url(../../img/doctor-background.svg);
+}
+
+.home__container h1 {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.home__content {
+  display: flex;
+}
+
+.home__left-content > h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--secondary-color);
+  margin-top: 30px;
+}
+
+/* .home__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
